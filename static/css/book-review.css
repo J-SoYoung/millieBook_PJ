@@ -1,0 +1,151 @@
+body {
+    line-height: inherit;
+    padding: 0; margin: 0;
+}
+.page-title {
+    font-size: 30px; font-weight: 600;
+    color: #948f83; padding: 50px;
+}
+.review-make{
+    border: 1px solid #a7a39a;
+    border-radius: 10px;
+    padding: 20px; box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.book-search {
+    border-bottom: 1px solid #a7a39a;
+    width: 80%; height: 55px;
+    margin: 0 auto 30px;
+    line-height: 55px; text-align: start;
+    box-sizing: border-box; padding: 0 10px;
+    display: flex;
+    justify-content: space-between; align-items: center;
+}
+.book-search input {
+    border: none;
+    height: 55px; width: 95%;
+    padding-left: 15px;
+}
+.book-search input i {
+    cursor: pointer;
+}
+.book-search input::placeholder {
+    padding-left: 15px;
+    text-align: center;
+}
+.review-write {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+.review-write p {
+    width: 70px;
+    margin-right: 15px;
+    color: gray;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 25px;
+}
+.review-write textarea {
+    width: 100%; height: 130px;
+    margin-right: 15px; padding: 20px;
+    border: #a7a39a 1px solid;
+    border-radius: 10px;
+}
+.review-write button {
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 14px; font-weight: 600;
+    color: gray;
+    border: 1px solid #a7a39a;
+    width: 70px; height: 30px;
+}
+
+
+/* ---------------- */
+.review-saveBox {
+    width: 100%;
+    display: flex; flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+.review-card {
+    width: 49%;
+    border: 1px solid #a7a39a; border-radius: 5px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px; box-sizing: border-box;
+}
+.review-card .card-img {
+    width: 30%;
+}
+.review-card .card-img img {
+    width: 100%; height: 160px;
+}
+.review-card .card-text {
+    width: 70%;
+}
+.review-card .card-text .text-box {
+    display: flex; flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start; padding: 15px ;
+}
+.text-title {
+    font-size: 16px; font-weight: 600;
+    margin-bottom: 7px;
+    height: 25px; width: 100%;
+    text-align: start;
+    overflow: hidden; text-overflow: ellipsis;
+    white-space: nowrap; word-break:break-all
+}
+.text-author {
+    font-size: 12px;
+}
+.review-comment {
+    box-sizing: border-box;
+    display: flex; flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 15px;
+}
+.review-comment .comment-tit {
+    width: 100%;
+    color: #a7a39a; font-weight: 600;
+    border-radius: 5px;
+    border: 2px solid #a7a39a ;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+.review-comment .comment {
+    font-size: 13px;
+    line-height: 15px;
+    text-align: start;
+}
+
+
+@media screen and (max-width: 879px) {
+    .book-review .cont-box { position: relative; width: 100%;}
+    .book-search { margin: 10px auto; width: 70%;}
+    .review { width: 100%; height: 100%;
+        display: flex; flex-direction: column;
+        justify-content: space-between; align-items: center;
+        box-sizing: border-box;
+    }
+    .review-search { width: 100%;}
+    .review-search img { width: 100px;}
+    .review-write { width: 100%;}
+    .review-write textarea { height: 90px;}
+
+    .review-card { width: 100%}
+    .review-comment .comment-tit { width: 30%;  }
+}
+@media screen and (max-width: 480px) {
+    .page-title { font-size: 25px; }
+    .review-comment .comment-tit { width: 40%;  }
+}

@@ -1,0 +1,25 @@
+.login-page { height: 100vh;}
+.cont-box { position: relative; }
+.main-p-loginbox { width: 100%; background-color: white; border-radius: 10px; padding: 30px 50px; }
+
+.login-box { text-align: start;  margin-top: 40px; }
+.login-box p {margin-bottom: 20px;}
+.login-box p i {margin-right: 5px;}
+.login-box p input { width: 100%; padding: 10px; margin: 5px 0; box-sizing: border-box; border-radius: 10px; border: 1px solid gray;}
+.login-box p input:placeholder-shown { color: gray; font-size: 12px;}
+
+.login-confirm { display: flex; flex-direction: column; align-items: center;}
+.login-confirm button { width: 50%; padding: 10px; box-sizing: border-box; border-radius: 10px; font-size: 14px; border: none; background-color: #FFEB60; margin: 10px 0; }
+.login-confirm button:hover { border: gray 1px solid;}
+.login-confirm a { font-size: 10px; color: gray; }
+
+@media screen and (max-width: 879px) {
+    .login-page .cont-box { position: relative; width: 100%;}
+    .main-p-loginbox { width: 50%; padding: 20px; position: relative; }
+    .main-p-loginbox .login-box { z-index: 1;}
+    .main-p-model img { position: absolute; right: 0; z-index: 0;}
+}
+@media screen and (max-width: 600px) {
+    .main-p-loginbox { width: 100%; padding: 20px; position: relative; }
+    .main-p-model img {display: none;}
+}
